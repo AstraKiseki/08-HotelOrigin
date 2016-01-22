@@ -1,0 +1,15 @@
+﻿<Window x:Class="HotelOrigin.CustomerManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelOrigin"
+        mc:Ignorable="d"
+        Title="Customer Management" Height="300" Width="300">
+    <Grid>
+        <DataGrid x:Name="CustomerManagementGrid" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Height="233" Width="275"/>
+        <Button x:Name="AddCustomerButton" Content="Add Customer" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="86" Click="AddCustomerButton_Click"/>
+        <Button x:Name="DeleteCustomerButton" Content="Delete Customer" HorizontalAlignment="Left" Margin="183,5,0,0" VerticalAlignment="Top" Width="102" Click="DeleteCustomerButton_Click"/>
+
+    </Grid>
+</Window>

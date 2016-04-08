@@ -10,26 +10,19 @@ namespace HotelOrigin.Core.Repository
 {
     class ReservationsRepository
     {
- 
-        //Create
-    //Read
-    //Update
-    //Delete
-
         private static ObservableCollection<Reservations> reservations = new ObservableCollection<Reservations>();
 
         public static Reservations Create()
         {
             Reservations reserve = new Reservations();
-
             reservations.Add(reserve);
-
             return reserve;
         }
 
         public static Reservations Where(string Customer)
         {
             Customer.Equals(Customer);
+            return reservations.Customer;
         }
 
         public static Reservations Where(int Room)

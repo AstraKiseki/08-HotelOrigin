@@ -11,35 +11,18 @@ namespace HotelOrigin.Core.Repository
     public class CustomerRepository
     {
         private static ObservableCollection<Customer> customers = new ObservableCollection<Customer>();
-
 //Create
         public static Customer Create()
         {
             Customer customer = new Customer();
-
             customers.Add(customer);
-
             return customer;
         }
-
-
 
         //Read
         public static Customer GetById(int id)
         {
-
             return customers.FirstOrDefault(c => c.Id == id);
-            //            Customer foundCustomer = null;
-            //
-            //            for (int i = 0; i < customers.Count; i++)
-            //           {
-            //               if (customers.ElementAt(i).Id == id)
-            //               {
-            //                   foundCustomer = customers.ElementAt(i);
-            //               }
-            //           }
-            //
-            //            return foundCustomer;
         }
 
         public static ObservableCollection<Customer> GetAll()
@@ -56,11 +39,9 @@ namespace HotelOrigin.Core.Repository
         }
 
         // Delete
-
         public static void Delete(int id)
         {
             var customer = GetById(id);
-
             customers.Remove(customer);
         }
     }

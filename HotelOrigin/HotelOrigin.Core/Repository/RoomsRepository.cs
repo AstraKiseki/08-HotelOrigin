@@ -45,12 +45,10 @@ namespace HotelOrigin.Core.Repository
             room.TypeOfBathroom = typeOfBathroom;
             room.HasBeenCleanedToday = hasBeenCleanedToday;
         }
-
-        // hm... Maybe have something that's for In Repairs?  No.  I'm not going to need it.  Then again, I won't need the delete room function either?
+        
         public static void Delete(int RoomNumber)
         {
             var room = GetByRoomNumber(RoomNumber);
-
             rooms.Remove(room);
         }
 

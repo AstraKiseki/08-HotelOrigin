@@ -32,7 +32,8 @@ namespace HotelOrigin.Core.Repository
 
         public static Reservations Where(DateTime CheckInDate)
         {
-           
+            CheckInDate.Equals(CheckInDate);
+            return reservations.CheckInDate;
         }
 
         public static ObservableCollection<Reservations> GetAll()
